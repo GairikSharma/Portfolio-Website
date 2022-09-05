@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Qahiri', sans-serif;
+    font-family: 'Quicksand', sans-serif; */
+    font-family: 'Exo', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Qahiri', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    background-color: #371B58;
+    cursor: pointer;
+    font-weight: 100;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Indie+Flower&family=Montserrat:wght@300&family=Noto+Serif+Display:wght@300&family=Open+Sans:wght@300&family=Qahiri&family=Quicksand&display=swap');
+body {
+    overflow-x: hidden;
+    position: relative;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 18px;
+}
+
+.edu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+}
+
+.edu div {
+    width: 45%;
+    height: 0.1px;
+    background-color: gray;
+}
+
+.edu h1 {
+    color: aliceblue;
+    padding: 14px;
+    margin: 10px;
+    font-weight: 100;
+    font-size: 1.0rem;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+}
+
+.skills div {
+    width: 45%;
+    height: 0.1px;
+    background-color: gray;
+}
+
+.skills h1 {
+    color: aliceblue;
+    padding: 14px;
+    margin: 10px;
+    font-weight: 100;
+    font-size: 1.0rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    position: fixed;
+    left: 1%;
+    bottom: 5%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: transparent;
+}
+
+.social-media div {
+    color: white;
+    width: 2px;
+    height: 100px;
+    background-color: aliceblue;
+    transform: rotate(180deg);
+}
+
+.social-media-icons {
+    font-size: 1.5rem;
+    color: white;
+    background: transparent;
+}
+
+@media only screen and (max-width: 910px) {
+    body {
+        /* padding: 2.5%; */
+        font-size: 14.4;
+        overflow-x: hidden;
+    }
+
+    .social-media {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 11px;
+
+    }
+}

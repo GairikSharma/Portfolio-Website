@@ -1,0 +1,81 @@
+.main-education-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-container {
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* border-left: 5px solid #A084CA; */
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a084ca1f;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.education {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.education-sidemenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 2%;
+}
+
+.school {
+
+    background: transparent;
+    padding: 10px;
+
+}
+
+.school:hover {
+    border-bottom: 5px solid #A084CA;
+}
+
+.school-HS {
+
+    background: transparent;
+    padding: 10px;
+
+}
+
+.school-HS:hover {
+    border-bottom: 5px solid #A084CA;
+}
+
+.grad {
+
+    background: transparent;
+    padding: 10px;
+
+}
+
+.grad:hover {
+    border-bottom: 5px solid #A084CA;
+}
+
+.inst {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+.skills-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 10px;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+.skills-container h3 {
+    color: aliceblue;
+}
+.skills-container::-webkit-scrollbar{
+    /* outline: 1px solid grey; */
+    width: 0.2rem;
+    border-radius: 10px;
+}
+.skills-container::-webkit-scrollbar-thumb{
+    background-color: #a084ca1f;
+}
+.skill-name{
+    /* height: 120px; */
+    /* background-color: white; */
+    padding: 5%;
+}
+.skill-percentage{
+    width: 100%;
+    height: 5px;
+    background-color: #a084ca1f;
+}
+.percentage{
+    width: 80%;
+    height: 5px;
+    /* background-color: rgb(255, 4, 108); */
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .skills-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+.skill-name{
+    /* height: 100px; */
+    /* background-color: white; */
+    padding: 5%;
+}
+}
+@media only screen and (max-width: 910px) {
+    .skills-container {
+        font-size: 14.4px;
+    }
+}
+@media only screen and (max-width: 600px) {
+  .skills-container{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+    font-size: 11px;
+}
+.skill-name{
+    /* height: 50px; */
+    /* background-color: white; */
+    padding: 5%;
+}
+}

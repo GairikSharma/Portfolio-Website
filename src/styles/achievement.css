@@ -1,0 +1,8 @@
+.achievement-container p{
+    color: white;
+    margin-top: 10px;
+}
+.achievement-container a {
+    color: #BFACE0;
+    text-decoration: none;
+}
