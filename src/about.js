@@ -34,9 +34,6 @@ function About() {
                     <div className="profile-card">
                         <div className="prof-pic" style={{ backgroundImage: `url(${profile})` }}>
                             <div className="text">
-                                {/* <p>Gairik Sharma</p>
-                                <p>India, from Kolkata</p>
-                                <p>Web Dev Enthusiast</p> */}
                             </div>
 
                         </div>

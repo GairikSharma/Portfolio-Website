@@ -29,16 +29,15 @@
     font-weight: 1500;
     margin-bottom: 2%;
 }
+
 .headingtwo {
     color: #c9aef8;
     font-size: 40px;
     font-weight: 800;
     word-spacing: 1.5px;
     line-height: 3.0rem;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
 }
+
 .info {
     margin-top: 20px;
     color: white;
@@ -54,24 +53,30 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    transform: rotate(5deg);
+    background: transparent;
+    filter: grayscale(100%);
 }
-
+.profile:hover {
+    filter: grayscale(0%);
+}
 .profile-card {
     width: 75%;
     height: 70%;
-    border: #BFACE0 1.5px solid;
+    border: transparent 1.5px solid;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: transparent;
 }
 
 .profile-card:hover {
-    transform: translate(5px, 5px);
-    transition: 1.5s;
+    transform: rotate(-5deg);
+    transition: 0.5ms;
 }
+
 .prof-pic {
     width: 95%;
     height: 95%;
@@ -79,27 +84,6 @@
     z-index: 1;
     background-size: 100% 100%;
 }
-.prof-pic .text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 15px;
-    align-items: center;
-    color: white;
-    font-size: 14.4px;
-    opacity: 0;
-}
-.prof-pic .text:hover {
-    opacity: 0.5;
-}
-.prof-pic:hover {
-    transform: translate(-15px, -15px);
-    transition: 2s;
-    opacity: 1;
-}
-
 
 @media only screen and (max-width: 990px) {
     .about-container {
@@ -116,100 +100,127 @@
     }
 
     .profile {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.profile-card {
-    width: 65%;
-    height: 90%;
-    border: #BFACE0 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.heading {
-    color: #EBC7E8;
-    font-weight: 8000;
-    font-size: 2.5rem;
-    word-spacing: 1.5px;
-    line-height: 3.0rem;
-}
-.headingtwo {
-    color: #b499e372;
-    font-size: 2.5rem;
-    word-spacing: 1.5px;
-    line-height: 3.0rem;
-    font-weight: 800;
-}
-.info {
-    margin-top: 20px;
-    color: white;
-    font-size: 1.0rem;
-    line-height: 2.0rem;
-}
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        filter: grayscale(100%);
+    }
+
+    .profile-card {
+        width: 65%;
+        height: 90%;
+        border: transparent 1.5px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card:hover {
+        transform: rotate(-5deg);
+        transition: 0.5ms;
+    }
+
+    .heading {
+        color: #EBC7E8;
+        font-weight: 8000;
+        font-size: 2.5rem;
+        word-spacing: 1.5px;
+        line-height: 3.0rem;
+    }
+
+    .headingtwo {
+        color: #b499e372;
+        font-size: 2.5rem;
+        word-spacing: 1.5px;
+        line-height: 3.0rem;
+        font-weight: 800;
+    }
+
+    .info {
+        margin-top: 20px;
+        color: white;
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+    }
 
 
-.download-icon {
-    font-size: 30px;
-    margin-left: 10px;
-    background-color: transparent;
-}
-.prof-pic .text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 15px;
-    align-items: center;
-    color: white;
-    font-size: 14.4px;
-    opacity: 0;
-}
-.prof-pic .text:hover {
-    opacity: 0.5;
-}
+    .download-icon {
+        font-size: 30px;
+        margin-left: 10px;
+        background-color: transparent;
+    }
+
+    .prof-pic .text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 15px;
+        align-items: center;
+        color: white;
+        font-size: 14.4px;
+        opacity: 0;
+    }
+
+    /* .prof-pic .text:hover {
+        opacity: 0.5;
+    } */
 }
 
 
 
 @media only screen and (max-width: 400px) {
     .profile-card {
-    width: 90%;
-    height: 60%;
-    border: #BFACE0 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+        width: 90%;
+        height: 60%;
+        border: transparent 1.5px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card:hover {
+        transform: rotate(-5deg);
+        transition: 0.5ms;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .profile-card {
-    width: 90%;
-    height: 80%;
-    border: #BFACE0 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+        width: 90%;
+        height: 80%;
+        border: transparent 1.5px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card:hover {
+        transform: rotate(-5deg);
+        transition: 0.5ms;
+    }
 }
 
 @media only screen and (max-width: 380px) {
-        .profile-card {
-    width: 100%;
-    height: 60%;
-    border: #BFACE0 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+    .profile-card {
+        width: 100%;
+        height: 60%;
+        border: transparent 1.5px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card:hover {
+        transform: rotate(-5deg);
+        transition: 0.5ms;
+    }
 }
