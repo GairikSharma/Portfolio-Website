@@ -56,10 +56,13 @@
     transform: rotate(5deg);
     background: transparent;
     filter: grayscale(100%);
+    
 }
+
 .profile:hover {
     filter: grayscale(0%);
 }
+
 .profile-card {
     width: 75%;
     height: 70%;
@@ -70,6 +73,7 @@
     flex-direction: column;
     align-items: center;
     background: transparent;
+    
 }
 
 .profile-card:hover {
@@ -83,8 +87,12 @@
     border-radius: 3px;
     z-index: 1;
     background-size: 100% 100%;
+    border-radius: 24px;
+    box-shadow: rgb(255 215 77 / 60%) -1px -1px 6px, rgb(124 127 255 / 60%) 1px 1px 6px;
 }
-
+.prof-pic:hover {
+    box-shadow: rgb(255 215 77) -1px -1px 20px, rgb(124 127 255) 1px 1px 20px;
+}
 @media only screen and (max-width: 990px) {
     .about-container {
         display: flex;
