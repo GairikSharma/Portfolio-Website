@@ -14,7 +14,7 @@ function About() {
             <div className="about-container" data-aos="fade-in">
                 <div className="text-intro" >
                     <p className='heading'>Hey , I am Gairik Sharma</p>
-                    <div className='headingtwo'>
+                    <div className='headingtwo' style={{height: "80px"}}>
                         <Typewriter
                             options={{
                                 strings: ['I am a Electronics Engineering undergrad', 'I am a MERN stack Developer'],

@@ -1,86 +1,81 @@
-import React, { useState, useEffect } from 'react'
-import './styles/education.css'
-import Aos from 'aos';
-import "aos/dist/aos.css";
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { FaGraduationCap } from "react-icons/fa";
 
 function Education() {
-  useEffect(() => {
-        Aos.init({ duration: 2000 })
-    }, [])
-
-  const [school, setSchool] = useState(true)
-  const [schoolhs, setSchoolhs] = useState(false)
-  const [grad, setGrad] = useState(false)
-
-  const set_school = () => {
-    setSchool(true)
-    setSchoolhs(false)
-    setGrad(false)
-  }
-
-  const set_schoolhs = () => {
-    setSchool(false)
-    setSchoolhs(true)
-    setGrad(false)
-  }
-
-  const set_grad = () => {
-    setSchool(false)
-    setSchoolhs(false)
-    setGrad(true)
-  }
   return (
     <>
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "white",
+            color: "black",
+            borderTop: "5px solid rgb(33, 150, 243)",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<FaGraduationCap style={{background: "transparent"}} />}
+        >
+          <h3 className="vertical-timeline-element-title" style={{background: "white",}}>WBBSE (2018)</h3>
+          <h4 className="vertical-timeline-element-subtitle" style={{background: "white",}}>
+            Gangapuri Siksha Sadan
+          </h4>
+          <p style={{background: "white"}}>
+            I have completed my 10th from Gangapuri Siksha Sadan under WBBSE in
+            2018 with 73%.
+          </p>
+        </VerticalTimelineElement>
 
-      <div className="main-education-container" data-aos="fade-in">
-        <div className="education-container">
-
-          <div className="education">
-            <div className="education-sidemenu">
-              <div className="school" onClick={set_school}>
-                10th
-              </div>
-              <div className="school-HS" onClick={set_schoolhs}>
-                10+2
-              </div>
-              <div className="grad" onClick={set_grad}>
-                College
-              </div>
-            </div>
-            <div className="inst">
-              {
-                school && (
-
-
-                  "I have completed my 10th from Gangapuri Siksha Sadan under WBBSE in 2018 with 73%."
-
-
-                )
-              }
-              {
-                schoolhs && (
-
-
-                  "I have completed my 10+2 from Gangapuri Siksha Sadan under WBCHSE in 2020 with 79%. "
-
-
-                )
-              }
-              {
-                grad && (
-
-
-                  "Currently I'm persuing B.Tech in Electronics & Communication Engineering from Netaji Subhash Engineering College."
-
-
-                )
-              }
-            </div>
-          </div>
-        </div>
-      </div>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "white",
+            color: "black",
+            borderTop: "5px solid rgb(16, 154, 11)",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(16, 154, 11)" }}
+          iconStyle={{ background: "rgb(16, 154, 11)", color: "#fff" }}
+          icon={<FaGraduationCap style={{background: "transparent"}} />}
+        >
+          <h3 className="vertical-timeline-element-title" style={{background: "white",}}>WBCHSE (2020)</h3>
+          <h4 className="vertical-timeline-element-subtitle" style={{background: "white",}}>
+            Gangapuri Siksha Sadan
+          </h4>
+          <p style={{background: "white",}}>
+            I have completed my 10+2 from Gangapuri Siksha Sadan under WBCHSE in
+            2020 with 79%.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background: "white",
+            color: "black",
+            borderTop: "5px solid rgb(223, 216, 6)",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(223, 216, 6)" }}
+          iconStyle={{ background: "rgb(223, 216, 6)", color: "#fff" }}
+          icon={<FaGraduationCap style={{background: "transparent"}} />}
+        >
+          <h3 className="vertical-timeline-element-title" style={{background: "white",}}>
+            B.Tech in Electronics & Communication Engineering
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle" style={{background: "white",}}>
+            Netaji Subhash Engineering College
+          </h4>
+          <p style={{background: "white",}}>
+            Currently I'm persuing B.Tech in Electronics & Communication
+            Engineering from Netaji Subhash Engineering College.
+          </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
     </>
-  )
+  );
 }
 
-export default Education
+export default Education;
