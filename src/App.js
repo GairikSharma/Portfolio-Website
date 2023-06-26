@@ -23,6 +23,7 @@ import Footer from "./footer";
 import ExperienceCard from "./experience";
 import Swiper from "swiper";
 import SwiperElement from "./swiper";
+import Exp from "./experienceSection";
 
 function App() {
   const [sidemenu, setSidemenu] = useState(false);
@@ -124,7 +125,13 @@ function App() {
             </ul>
             <button>
               Download CV
-              <a href="#" style={{ background: "transparent" }}>
+              <a
+                href="#"
+                style={{
+                  background: "transparent",
+                  color: "rgba(66, 233, 239, 0.891)",
+                }}
+              >
                 <IoMdDownload className="download-icon" />
               </a>
             </button>
@@ -249,6 +256,7 @@ function App() {
         <h1>Projects</h1>
         <div></div>
       </div>
+      {/* here project section  */}
       <Projects />
       <div className="skills" ref={achivementref}>
         <div></div>

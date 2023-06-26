@@ -1,27 +1,112 @@
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
 }
 
-
 .get-in-touch {
-    width: 50%;
-    border: 1.5px solid #7858A6;
-    border-radius: 5px;
-    margin-top: 3%;
-    color: aliceblue;
-    padding: 20px;
-    margin-bottom: 1.5%;
+  width: 15%;
+  border: 1.5px solid rgba(66, 233, 239, 0.891);
+  border-radius: 5px;
+  margin-top: 3%;
+  color: aliceblue;
+  padding: 20px;
+  margin-bottom: 1.5%;
 }
 
 .get-in-touch:hover {
-    background-color: #7858a644;
+  background-color: rgba(58, 226, 255, 0.17);
 }
 
 .modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(48, 45, 45, 0.863);
+  /* backdrop-filter: blur(30px); */
+}
+
+.modal-content {
+  width: 70%;
+  height: 60%;
+  background: transparent;
+  z-index: 1000;
+}
+
+.close-icon-form {
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.modal-content form {
+  padding: 1.5%;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.modal-content form h3 {
+  background: transparent;
+  color: #7858a6;
+}
+
+.modal-content form input {
+  width: 80%;
+  padding: 14px;
+  background: transparent;
+  border: 0.2px solid #7858a6;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+.modal-content form textarea {
+  width: 80%;
+  background: transparent;
+  /* border-top: none;
+    border-left: none;
+    border-right: none; */
+
+  border-radius: 5px;
+  margin-top: 1%;
+  padding: 14px;
+  resize: vertical;
+  border: 0.2px solid #7858a6;
+}
+
+.modal-content form button {
+  width: 50%;
+  border: 0.5px solid #7858a6;
+  border-radius: 5px;
+  margin-top: 3%;
+  color: aliceblue;
+  padding: 20px;
+  margin-bottom: 1.5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .get-in-touch {
+    width: 35%;
+  }
+  .modal-bg {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -34,144 +119,59 @@
     flex-direction: column;
     align-items: center;
     background: rgba(48, 45, 45, 0.863);
-    /* backdrop-filter: blur(30px); */
-}
+    z-index: 100;
+  }
 
-.modal-content {
-    width: 70%;
-    height: 60%;
-    background: transparent;
-    z-index: 1000;
+  .modal-content {
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    bottom: 0;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
 
-}
-
-.close-icon-form {
-    background: transparent;
-    color: white;
-    font-size: 18px;
-    float: right;
-    margin-bottom: 1.0rem;
-}
-
-.modal-content form {
-    padding: 1.5%;
+  .modal-content form {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
     height: 100%;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
-}
+    margin-bottom: 10px;
+  }
 
-.modal-content form h3 {
-    background: transparent;
-    color: #7858A6;
-}
-
-.modal-content form input {
+  .modal-content form input {
     width: 80%;
     padding: 14px;
     background: transparent;
-    border: 0.2px solid #7858A6;
-    border-radius: 5px;
+    border: 0.02px solid black;
+    border-radius: 4px;
     margin-top: 1%;
-}
+  }
 
-.modal-content form textarea {
-    width: 80%;
-    background: transparent;
-    /* border-top: none;
-    border-left: none;
-    border-right: none; */
-
-    border-radius: 5px;
-    margin-top: 1%;
-    padding: 14px;
-    resize: vertical;
-    border: 0.2px solid #7858A6;
-}
-
-.modal-content form button {
+  .modal-content form button {
     width: 50%;
-    border: 0.5px solid #7858A6;
+    border: 1.5px solid #7858a6;
     border-radius: 5px;
     margin-top: 3%;
     color: aliceblue;
     padding: 20px;
     margin-bottom: 1.5%;
-}
+  }
 
-@media only screen and (max-width: 600px) {
-    .modal-bg {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(48, 45, 45, 0.863);
-        z-index: 100;
-    }
-
-    .modal-content {
-        width: 100%;
-        height: 70%;
-        position: fixed;
-        bottom: 0;
-        border-bottom-left-radius: none;
-        border-bottom-right-radius: none;
-    }
-
-    .modal-content form {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(255, 255, 255);
-        border-bottom-left-radius: none;
-        border-bottom-right-radius: none;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .modal-content form input {
-        width: 80%;
-        padding: 14px;
-        background: transparent;
-        border: 0.02px solid black;
-        border-radius: 4px;
-        margin-top: 1%;
-
-    }
-
-    .modal-content form button {
-        width: 50%;
-        border: 1.5px solid #7858A6;
-        border-radius: 5px;
-        margin-top: 3%;
-        color: aliceblue;
-        padding: 20px;
-        margin-bottom: 1.5%;
-    }
-
-    .close-icon-form {
-        background: transparent;
-        color: white;
-        font-size: 18px;
-        float: right;
-        margin-bottom: 1.0rem;
-        margin-right: 10px;
-    }
+  .close-icon-form {
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    float: right;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+  }
 }

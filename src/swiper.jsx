@@ -1,19 +1,19 @@
 import React from "react";
 import "./styles/swiper.css";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow } from "swiper";
 import Card from "./card";
 
 function SwiperElement() {
   return (
     <>
-      <div className="container">
+      <div className="swiper-wrapper">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -38,25 +38,30 @@ function SwiperElement() {
           breakpoints={{
             300: {
               slidesPerView: 1,
-              spaceBetween: 5,
+              spaceBetween: 2,
             },
             400: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 2,
             },
             640: {
-              slidesPerView: 4,
-              spaceBetween: 40,
+              slidesPerView: 2,
+              spaceBetween: 20,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 50,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1600: {
+              slidesPerView: 4,
+              spaceBetween: 40,
             },
           }}
         >
-          <SwiperSlide>
-            <Card />
-          </SwiperSlide>
           <SwiperSlide>
             <Card />
           </SwiperSlide>

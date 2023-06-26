@@ -24,8 +24,8 @@ function About() {
                         />
                     </div>
                     <div className='info'>
-                        I am a third year student of <span style={{ fontSize: '18px', fontWeight: '100', color: '#BFACE0' }}>Netaji Subhash Engineering College</span> in
-                        Electronics & Communication Engineering Department. Besides that I'm a <span style={{ fontSize: '25px', fontWeight: '100', color: '#BFACE0' }}>MERN</span> stack developer.
+                        I am a third year student of <span style={{ fontSize: '18px', fontWeight: '600', color: 'rgba(66, 233, 239, 0.891)' }}>Netaji Subhash Engineering College</span> in
+                        Electronics & Communication Engineering Department. Besides that I'm a <span style={{ fontSize: '18px', fontWeight: '600', color: 'rgba(66, 233, 239, 0.891)' }}>MERN</span> stack developer.
                         I like to learn new technologies.
                     </div>
 

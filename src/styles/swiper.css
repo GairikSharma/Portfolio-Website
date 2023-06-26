@@ -8,23 +8,8 @@
     background: transparent;
 }
 .swiper_container {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+  width: 80%;
 }
-
-
-.swiper_container {
-  width: 480px;
-}
-
-@media screen and (min-width: 640px) {
-  .swiper_container {
-    width: 640px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .swiper_container {
-    width: 768px;
-  }
+.swiper-wrapper {
+    height: 400px;
 }

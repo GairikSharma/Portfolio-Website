@@ -2,12 +2,16 @@
   width: 50%;
   min-height: 380px;
   max-height: auto;
-  background-color: ghostwhite;
+  /* background-color: rgb(23, 64, 69); */
+  border: 1px solid rgba(66, 233, 239, 0.891);
+  background: rgba(58, 226, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
 
-  border: none;
-  border-radius: 12px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  /* border-radius: 12px; */
+  /* border-top-left-radius: 12px;
+  border-top-right-radius: 12px; */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
@@ -17,9 +21,10 @@
   align-items: center;
   gap: 20px;
   padding: 5px;
+  color: white;
 }
 .icon-workplace-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
   width: 100%;
   display: flex;
@@ -29,7 +34,7 @@
   gap: 12px;
 }
 .workplace-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
   width: 100%;
   display: flex;
@@ -39,17 +44,17 @@
   gap: 12px;
 }
 .workplace-header-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
-  font-size: 18px;
-  font-weight: 500;
-  color: blueviolet;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.73);
 }
 .woprkplace-timeline-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 }
 .icon-wrapper-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
   width: 100%;
   display: flex;
@@ -58,13 +63,11 @@
   align-items: center;
 }
 .icon-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
   margin-top: 20px;
   width: 60px;
   height: 60px;
-  /* background-color: orange;
-  border: 5px rgb(255, 0, 0) solid; */
   border-radius: 50%;
   animation: bounce 0.5s infinite alternate;
 }
@@ -78,8 +81,7 @@
   }
 }
 .workplace-exp {
-  background-color: ghostwhite;
-
+  background-color: transparent;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -87,21 +89,22 @@
   align-items: center;
 }
 .card-header-exp {
-  background-color: ghostwhite;
-
+  background-color: transparent;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: white;
   font-size: 24px;
   font-weight: 600;
 }
 .card-description-exp {
-  background-color: ghostwhite;
+  background-color: transparent;
 
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 @media only screen and (max-width: 910px) {
   .card-body-exp {

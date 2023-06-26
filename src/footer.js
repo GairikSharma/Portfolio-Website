@@ -31,7 +31,7 @@ function Footer() {
                 </div>
                 {/* <div></div> */}
                 <p className="dev-name">
-                    Developed and Designed by <span style={{ color: '#EBC7E8' }}>Gairik Sharma</span> with React Js
+                    Developed and Designed by <span style={{ fontWeight: "600", color: 'rgba(66, 233, 239, 0.891)' }}>Gairik Sharma</span> with React Js
                 </p>
                 <p className='dev-name' style={{textAlign: 'center'}}>Thank you for visiting my portfolio website, come and connect with me in social media.</p>
             </div>

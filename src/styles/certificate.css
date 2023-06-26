@@ -1,43 +1,46 @@
 .certificate-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    color: white;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  font-size: 18px;
 }
 .certificate {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
 }
 .certificate h3 {
-    width: 80%;
-    color: aliceblue;
-    font-size: 18px;
+  width: 80%;
+  color: aliceblue;
+  font-size: 18px;
 }
 .certificate button {
-    width: 20%;
-    padding: 1%;
-    background-color: #7858A6;
-    color: white;
-    border: 1.5px #A084CA solid;
-    border-radius: 5px;
+  width: 10%;
+  padding: 1%;
+  background-color: rgba(58, 226, 255, 0.17);
+  color: white;
+  border: 1.5px rgba(66, 233, 239, 0.891) solid;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 910px) {
-    .certificate-container {
-        font-size: 14.4px;
-    }
-    .certificate h3 {
+  .certificate-container {
     font-size: 14.4px;
-}
+  }
+  .certificate h3 {
+    font-size: 14.4px;
+  }
 }
 @media only screen and (max-width: 600px) {
-    .certificate-container {
-        font-size: 11px;
-    }
-    .certificate h3 {
+  .certificate button {
+    width: 20%;
+  }
+  .certificate-container {
     font-size: 11px;
-}
+  }
+  .certificate h3 {
+    font-size: 11px;
+  }
 }
