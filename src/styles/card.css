@@ -1,157 +1,134 @@
-.card {
+.card-body {
   width: 100%;
-  height: 350px;
-
+  height: 480px;
+  overflow: hidden;
   border: 1px solid rgba(66, 233, 239, 0.891);
-  border-radius: 10px;
-  font-size: large;
-}
-.card:hover {
-  transform: scale(1.01);
-  background: rgba(58, 226, 255, 0.17);
-}
-.card-header {
-  height: 20%;
-  display: flex;
-  background: transparent;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.react-logo {
-  width: 100px;
-  height: 100px;
-  background: transparent;
-  border-radius: 50%;
-  animation: spin infinite 20s linear;
-  animation-duration: 4000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: infinite;
-  align-items: center;
-}
-.js-logo {
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border-radius: 5;
-  animation: spinjs infinite 20s linear;
-  animation-duration: 4000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: infinite;
-  align-items: center;
-  margin-left: 1.5%;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinjs {
-  from {
-    transform: scale(0.5);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-.proj-name {
-  margin-right: 1.5rem;
-  color: #ebc7e8;
-  background: transparent;
-}
-.main-content h2 {
-  color: aliceblue;
-  background: transparent;
-  /* padding-top: 10%; */
-  padding-left: 5%;
-  float: left !important;
-}
-.main-content p {
-  color: aliceblue;
-  background: transparent;
-  padding-top: 1.8%;
-  padding-left: 5%;
-}
-
-.main-content {
-  background: transparent;
-  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  column-gap: 2%;
-}
-.card-footer {
-  height: 20%;
-  width: 100%;
-  display: flex;
   align-items: center;
-  flex-direction: row-reverse;
-  color: aliceblue;
-  background: transparent;
+  border-radius: 12px;
+  position: relative;
 }
-.card-footer button {
-  width: 50%;
-  height: 100%;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: none;
-  padding: 14px;
-}
-.card a {
-  width: 100%;
-  height: 100%;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: none;
-  padding: 14px;
-  text-decoration: none;
-}
-.card a:hover {
-  color: #371b58;
-}
-.ai-icons {
-  font-size: 25px;
-  background: transparent;
-  margin-left: 10px;
-}
-.card-footer button:hover {
-  width: 50%;
-  height: 100%;
-  color: #371b58;
-  background-color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border: none;
-  padding: 14px;
-}
+.browser {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 24px;
+    background-color: rgb(10, 25, 47);
 
-@media only screen and (max-width: 910px) {
-  .card {
-    font-size: 16px;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
-@media only screen and (max-width: 600px) {
-  .card {
-    font-size: 10px;
-  }
+.circle-r {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 6px;
+}
+.circle-g {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 6px;
+}
+.circle-b {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 6px;
+}
+.circle-r {
+    background-color: rgb(250, 47, 47);
+}
+.circle-g {
+    background-color: yellow;
+}
+.circle-b {
+    background-color: rgb(10, 234, 10);
+}
+.image-wrapper {
+  width: 100%;
+  height: 45%;
+}
+.project-overview {
+  width: 100%;
+  transition: all 5s ease;
+}
+.card-body:hover .project-overview {
+  transform: translateY(-20%);
+}
+.details {
+  width: 100%;
+  height: 55%;
+  color: white;
+  background: rgb(136, 144, 152);
+  background: rgb(10, 25, 47);
+  z-index: 1;
+}
+.title-tool {
+    width: 100%;
+    min-height: 25%;
+    max-height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+}
+.project-title {
+    width: 40%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    /* padding-left: 15px; */
+    text-align: center;
+}
+.project-tools {
+    width: 60%;
+    height: 100%;
+    font-size: 14.4px;
+    font-weight: 400;
+    text-align: center;
+}
+.project-description {
+    width: 100%;
+    height: 55%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14.4px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.581);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons {
+    width: 100%;
+    height: 9%;
+    position: absolute;
+    bottom: 0px;
+}
+.buttons button {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: rgba(66, 233, 239, 0.891);
+    font-size: 14.4px;
+}
+.buttons button a {
+    color: rgba(66, 233, 239, 0.891);
+}
+.card-btn-icons {
+    font-size: 24px;
 }

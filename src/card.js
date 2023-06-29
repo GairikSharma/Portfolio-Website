@@ -1,32 +1,50 @@
-import React from 'react'
-import './styles/card.css'
-import logo from './assets/logo.svg'
-import { AiFillGithub, AiOutlineLink } from 'react-icons/ai'
+import React from "react";
+import "./styles/card.css"
+import demo from "./assets/demo.png"
+import { BsGithub } from "react-icons/bs";
+import { BiLinkExternal } from "react-icons/bi";
+import { projectData } from "./data/data";
 
-function Card(props) {
-    return (
-        <>
-            
-                <div className="card">
-                    <div className="card-header">
-                        <img src={logo} alt="logo" className='react-logo' />
-                        <h1 className="proj-name">{props.projectname}</h1>
-                    </div>
-                    <div className="main-content">
-                        <h2>{props.projecttitle}</h2>
-                        <p>
-                            {props.projectdescription}
-                        </p>
-                        <p>Tools : {props.tools}</p>
-                    </div>
-                    <div className="card-footer">
-                        <button><a href={props.link}>Live Link <AiOutlineLink className='ai-icons'/></a></button>
-                        <button><a href={props.github}>GitHub <AiFillGithub className='ai-icons'/></a></button>
-                    </div>
-                </div>
-            
-        </>
-    )
+function Card() {
+  return (
+    <>
+      {projectData.map((props) => {
+        return (
+          <div className="card-body">
+            <div className="browser">
+              <div className="circle-r"></div>
+              <div className="circle-g"></div>
+              <div className="circle-b"></div>
+            </div>
+            <div className="image-wrapper">
+              <img src={props.image} alt="" className="project-overview" />
+            </div>
+            <div className="details">
+              <div className="title-tool">
+                <div className="project-title">{props.title}</div>
+                <div className="project-tools">{props.tools}</div>
+              </div>
+              <div className="project-description">
+                {props.description}
+              </div>
+              <div className="buttons">
+                <button>
+                  <a href={props.live} target="_blank">
+                    <BiLinkExternal className="card-btn-icons" />
+                  </a>
+                </button>
+                <button>
+                  <a href={props.github} target="_blank">
+                    <BsGithub className="card-btn-icons" />
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
 }
 
-export default Card
+export default Card;

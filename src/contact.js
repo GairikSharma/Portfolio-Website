@@ -27,7 +27,7 @@ function Contact() {
           </div>
         )
       }
-      <button className='get-in-touch' onClick={show}>Get In Touct</button>
+      <button className='get-in-touch' onClick={show}>Get In Touch</button>
     </div>
   )
 }
