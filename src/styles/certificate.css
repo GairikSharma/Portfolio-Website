@@ -20,10 +20,13 @@
 .certificate button {
   width: 10%;
   padding: 1%;
-  background-color: rgba(58, 226, 255, 0.17);
+  /* background-color: rgba(58, 226, 255, 0.17); */
   color: white;
   border: 1.5px rgba(66, 233, 239, 0.891) solid;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+.certificate button:hover {
+  background-color: rgba(58, 226, 255, 0.17);
 }
 @media only screen and (max-width: 910px) {
   .certificate-container {

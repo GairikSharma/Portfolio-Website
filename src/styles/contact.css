@@ -81,10 +81,6 @@
 .modal-content form textarea {
   width: 80%;
   background: transparent;
-  /* border-top: none;
-    border-left: none;
-    border-right: none; */
-
   border-radius: 5px;
   margin-top: 1%;
   padding: 14px;

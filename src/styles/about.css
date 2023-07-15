@@ -51,44 +51,41 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  transform: rotate(5deg);
   background: transparent;
-  filter: grayscale(100%);
-}
-
-.profile:hover {
-  filter: grayscale(0%);
 }
 
 .profile-card {
-  width: 75%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   border: transparent 1.5px solid;
-  border-radius: 3px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: transparent;
+  position: relative;
 }
-
-.profile-card:hover {
-  transform: rotate(-5deg);
-  transition: 0.5ms;
+.prof-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0AFBE3;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
-
 .prof-pic {
-  width: 95%;
-  height: 95%;
-  border-radius: 3px;
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  width: 50%;
+  height: 50%;
   z-index: 1;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
-  border-radius: 24px;
-  box-shadow: rgb(255 215 77 / 60%) -1px -1px 6px,
-    rgb(124 127 255 / 60%) 1px 1px 6px;
-}
-.prof-pic:hover {
-  box-shadow: rgb(255 215 77) -1px -1px 20px, rgb(124 127 255) 1px 1px 20px;
+  background-image: url('../assets/canvas.jpg');
 }
 @media only screen and (max-width: 990px) {
   .about-container {
@@ -111,7 +108,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    filter: grayscale(100%);
   }
 
   .profile-card {
@@ -122,11 +118,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-
-  .profile-card:hover {
-    transform: rotate(-5deg);
-    transition: 0.5ms;
   }
 
   .heading {
@@ -182,11 +173,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .profile-card:hover {
-    transform: rotate(-5deg);
-    transition: 0.5ms;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -199,11 +185,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .profile-card:hover {
-    transform: rotate(-5deg);
-    transition: 0.5ms;
-  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -215,10 +196,5 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-
-  .profile-card:hover {
-    transform: rotate(-5deg);
-    transition: 0.5ms;
   }
 }

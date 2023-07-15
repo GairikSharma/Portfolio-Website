@@ -24,6 +24,7 @@ import ExperienceCard from "./experience";
 import Swiper from "swiper";
 import SwiperElement from "./swiper";
 import Exp from "./experienceSection";
+import Progress from "./progressComponent";
 
 function App() {
   const [sidemenu, setSidemenu] = useState(false);
@@ -206,6 +207,7 @@ function App() {
       </div>
 
       <div className="social-media">
+        <div></div>
         <a href="gairiksharma2000@gmail.com">
           <FiMail className="social-media-icons" />
         </a>
@@ -250,7 +252,8 @@ function App() {
         <h1>Skills</h1>
         <div></div>
       </div>
-      <Skills />
+      {/* <Skills /> */}
+      <Progress />
       <div className="skills" ref={projectsref}>
         <div></div>
         <h1>Projects</h1>

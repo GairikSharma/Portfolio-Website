@@ -15,7 +15,7 @@ function Education() {
           contentStyle={{
             border: "1px solid rgba(66, 233, 239, 0.891)",
             background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "16px",
+            borderRadius: "3px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",
@@ -47,7 +47,7 @@ function Education() {
           contentStyle={{
             border: "1px solid rgba(66, 233, 239, 0.891)",
             background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "16px",
+            borderRadius: "3px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",
@@ -78,7 +78,7 @@ function Education() {
           contentStyle={{
             border: "1px solid rgba(66, 233, 239, 0.891)",
             background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "16px",
+            borderRadius: "3px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",

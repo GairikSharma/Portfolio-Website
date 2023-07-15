@@ -5,7 +5,7 @@
   /* background-color: rgb(23, 64, 69); */
   border: 1px solid rgba(66, 233, 239, 0.891);
   background: rgba(58, 226, 255, 0.17);
-  border-radius: 16px;
+  border-radius: 3px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.5px);
 
@@ -46,11 +46,12 @@
 .workplace-header-exp {
   background-color: transparent;
 
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.73);
 }
 .woprkplace-timeline-exp {
+  font-size: 16px;
   background-color: transparent;
 }
 .icon-wrapper-exp {
@@ -101,6 +102,7 @@
   font-weight: 600;
 }
 .card-description-exp {
+  font-size: 18px;
   background-color: transparent;
 
   text-align: center;
