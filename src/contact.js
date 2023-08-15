@@ -11,7 +11,7 @@ function Contact() {
     <div className="contact-container">
       {showmodal && (
         <div className="modal-bg">
-          <div className="modal-content">
+          <div className="modal-content wave-group">
             <CgClose
               className="close-icon-form"
               onClick={() => {

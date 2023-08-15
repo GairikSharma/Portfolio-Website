@@ -4,6 +4,7 @@ import canvas from "./assets/canvas.png";
 import Typewriter from "typewriter-effect";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import coding from "./assets/coding.gif";
 
 function About() {
   useEffect(() => {
@@ -51,12 +52,9 @@ function About() {
             stack developer. I like to learn new technologies.
           </div>
         </div>
-        {/* <div className="profile">
-          <div className="profile-card">
-            <div className="prof-bg"></div>
-            <div className="prof-pic"></div>
-          </div>
-        </div> */}
+        <div className="profile">
+          <img src={coding} className="profile-img" alt="" />
+        </div>
       </div>
     </>
   );

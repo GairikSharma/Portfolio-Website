@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
 }
 
 .get-in-touch {
@@ -33,7 +32,6 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(0,0,0,0.5);
-  /* backdrop-filter: blur(30px); */
 }
 
 .modal-content {
@@ -97,6 +95,7 @@
   padding: 20px;
   margin-bottom: 1.5%;
 }
+
 
 @media only screen and (max-width: 600px) {
   .get-in-touch {
