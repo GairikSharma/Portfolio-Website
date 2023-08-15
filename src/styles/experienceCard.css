@@ -1,11 +1,11 @@
 .card-body-exp {
-  width: 50%;
+  width: 35%;
   min-height: 380px;
   max-height: auto;
   /* background-color: rgb(23, 64, 69); */
   border: 1px solid rgba(66, 233, 239, 0.891);
-  background: rgba(58, 226, 255, 0.17);
-  border-radius: 3px;
+  
+  border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.5px);
 
@@ -22,6 +22,10 @@
   gap: 20px;
   padding: 5px;
   color: white;
+}
+
+.card-body-exp:hover {
+  background: rgba(58, 226, 255, 0.17);
 }
 .icon-workplace-exp {
   background-color: transparent;
@@ -116,5 +120,8 @@
 @media only screen and (max-width: 600px) {
   .card-body-exp {
     width: 100%;
+  }
+  .card-header-exp {
+    font-size: 20px;
   }
 }

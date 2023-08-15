@@ -18,10 +18,10 @@ function ExperienceCard() {
           </div>
         </div>
         <div className="card-header-exp">Frontend developer Intern</div>
-        <div className="card-description-exp">
+        {/* <div className="card-description-exp">
             Developing and managing the frontend of a project.Handled day to day
             responsibilities.Worked with the team
-        </div>
+        </div> */}
       </div>
     </>
   );

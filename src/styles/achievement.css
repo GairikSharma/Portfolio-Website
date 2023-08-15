@@ -1,8 +1,148 @@
-.achievement-container p{
-    color: white;
-    margin-top: 10px;
+.achievement-wrapper {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.achievement-container a {
-    color: rgba(66, 233, 239, 0.891);
-    text-decoration: none;
+
+.a-card-google {
+  position: relative;
+  width: 40%;
+  height: 90%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: contain;
+}
+
+.a-card-details-google {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 14px;
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-card-google:hover > .a-card-details-google {
+  opacity: 1;
+}
+
+.a-card-others {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.a-card-hacktoberfest {
+  position: relative;
+  width: 100%;
+  height: 45%;
+}
+.a-card-hack4bengal {
+  position: relative;
+  width: 100%;
+  height: 45%;
+}
+
+.a-card-details-hacktoberfest {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 14px;
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-card-details-hack4bengal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 14px;
+  color: white;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-card-hacktoberfest:hover > .a-card-details-hacktoberfest {
+  opacity: 1;
+}
+
+.a-card-hack4bengal:hover > .a-card-details-hack4bengal {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .achievement-wrapper {
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .a-card-google {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  }
+  .a-card-others {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  }
 }

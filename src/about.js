@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./styles/about.css";
-import canvas from "./assets/canvas.png";
 import Typewriter from "typewriter-effect";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import coding from "./assets/coding.gif";
+import GairikSharma_cv from "./pdf/GairikSharma_cv.pdf"
 
 function About() {
   useEffect(() => {
@@ -16,14 +16,16 @@ function About() {
         <div className="text-intro">
           <p className="heading">Hey , I am Gairik Sharma</p>
           <div className="headingtwo" style={{ height: "80px" }}>
+            
             <Typewriter
               options={{
                 strings: [
-                  "I am a Electronics Engineering undergrad",
+                  "I am a Electronics Engineer",
                   "I am a MERN stack Developer",
                 ],
                 autoStart: true,
                 loop: true,
+                
               }}
             />
           </div>
@@ -55,7 +57,10 @@ function About() {
         <div className="profile">
           <img src={coding} className="profile-img" alt="" />
         </div>
+
+        
       </div>
+      <a href={GairikSharma_cv} target="blank">Resume</a>
     </>
   );
 }
