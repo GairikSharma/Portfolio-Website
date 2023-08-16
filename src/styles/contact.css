@@ -6,7 +6,7 @@
 }
 
 .get-in-touch {
-  width: 15%;
+  width: 180px;
   border: 1.5px solid rgba(66, 233, 239, 0.891);
   border-radius: 5px;
   margin-top: 3%;
@@ -35,7 +35,7 @@
 }
 
 .modal-content {
-  width: 70%;
+  width: 45%;
   height: 60%;
   background: transparent;
   z-index: 1000;

@@ -267,12 +267,12 @@ function App() {
         <div></div>
       </div>
       <Achievement />
-      <div className="skills" ref={certificateref}>
+      {/* <div className="skills" ref={certificateref}>
         <div></div>
         <h1>Certifications</h1>
         <div></div>
       </div>
-      <Certificate />
+      <Certificate /> */}
       <div className="skills" ref={contactref}>
         <div></div>
         <h1>Contact</h1>

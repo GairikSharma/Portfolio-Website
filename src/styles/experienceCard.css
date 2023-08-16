@@ -1,31 +1,34 @@
+.exp-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .card-body-exp {
-  width: 35%;
-  min-height: 380px;
+  width: 25%;
+  min-height: 300px;
   max-height: auto;
-  /* background-color: rgb(23, 64, 69); */
-  border: 1px solid rgba(66, 233, 239, 0.891);
+  background-color: rgb(23, 42, 69);
+  color: white;
   
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.5px);
 
-  /* border-radius: 12px; */
-  /* border-top-left-radius: 12px;
-  border-top-right-radius: 12px; */
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 5px;
-  color: white;
 }
-
-.card-body-exp:hover {
-  background: rgba(58, 226, 255, 0.17);
+.exp-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
 }
 .icon-workplace-exp {
   background-color: transparent;
@@ -50,9 +53,8 @@
 .workplace-header-exp {
   background-color: transparent;
 
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.73);
 }
 .woprkplace-timeline-exp {
   font-size: 16px;
@@ -101,8 +103,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 }
 .card-description-exp {

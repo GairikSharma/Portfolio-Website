@@ -13,9 +13,9 @@ function Education() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            border: "1px solid rgba(66, 233, 239, 0.891)",
-            background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "3px",
+            // border: "1px solid rgba(66, 233, 239, 0.891)",
+            background: "rgb(23, 42, 69)",
+            borderRadius: "12px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",
@@ -45,9 +45,9 @@ function Education() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            border: "1px solid rgba(66, 233, 239, 0.891)",
-            background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "3px",
+            // border: "1px solid rgba(66, 233, 239, 0.891)",
+            background: "rgb(23, 42, 69)",
+            borderRadius: "12px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",
@@ -76,9 +76,9 @@ function Education() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            border: "1px solid rgba(66, 233, 239, 0.891)",
-            background: "rgba(58, 226, 255, 0.17)",
-            borderRadius: "3px",
+            // border: "1px solid rgba(66, 233, 239, 0.891)",
+            background: "rgb(23, 42, 69)",
+            borderRadius: "12px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
             backdropFilter: "blur(7.5px)",
             color: "white",
