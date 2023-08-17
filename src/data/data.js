@@ -4,6 +4,7 @@ import demo from "../assets/demo.png"
 
 export const projectData = [
   {
+    id: 1,
     image: chat,
     title: "ChatX",
     tools: "React Js, Firebase",
@@ -13,6 +14,7 @@ export const projectData = [
     live: "https://chat-app-chatx.netlify.app/",
   },
   {
+    id: 2,
     image: task,
     title: "TaskGenius",
     tools: "React Js, Firebase",
@@ -22,6 +24,7 @@ export const projectData = [
     live: "https://taskgenius-task-manager.netlify.app/",
   },
   // {
+  //   id: 3,
   //   image: demo,
   //   title: "NewsHunt",
   //   tools: "React Js, News API",

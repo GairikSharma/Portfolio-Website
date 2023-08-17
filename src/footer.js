@@ -41,13 +41,9 @@ function Footer() {
             style={{ fontWeight: "600", color: "rgba(66, 233, 239, 0.891)" }}
           >
             Gairik Sharma
-          </span>{" "}
-          with React Js
+          </span>
         </div>
-        <div className="dev-name" style={{ textAlign: "center" }}>
-          Thank you for visiting my portfolio website, come and connect with me
-          in social media.
-        </div>
+        
       </div>
     </>
   );

@@ -13,6 +13,7 @@ function Contact() {
         <div className="modal-bg">
           <div className="modal-content wave-group">
             <CgClose
+            style={{style: "24px"}}
               className="close-icon-form"
               onClick={() => {
                 setShowmodal(false);
@@ -22,7 +23,7 @@ function Contact() {
               action="https://getform.io/f/2db56d14-5b80-43c7-9ff8-bb0724947411"
               method="POST"
             >
-              <h3>Contact Me</h3>
+              <h3>Get in Touch with Me</h3>
               <input type="text" name="name" placeholder="Enter Your Name" />
               <input type="text" name="title" placeholder="Title" />
               <textarea

@@ -63,17 +63,22 @@
 }
 
 .modal-content form h3 {
+  font-size: large;
+  margin-top: 10px;
+  font-weight: 500;
   background: transparent;
-  color: #7858a6;
 }
 
 .modal-content form input {
   width: 80%;
   padding: 14px;
   background: transparent;
-  border: 0.2px solid #7858a6;
   border-radius: 5px;
   margin-top: 1%;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.modal-content form input:focus {
+  outline: none;
 }
 
 .modal-content form textarea {
@@ -83,16 +88,20 @@
   margin-top: 1%;
   padding: 14px;
   resize: vertical;
-  border: 0.2px solid #7858a6;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.modal-content form textarea:focus {
+  outline: none;
 }
 
 .modal-content form button {
-  width: 50%;
-  border: 0.5px solid #7858a6;
+  width: 150px;
+  height: 64px;
   border-radius: 5px;
   margin-top: 3%;
   color: aliceblue;
-  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: 1.5%;
 }
 
@@ -152,13 +161,13 @@
   }
 
   .modal-content form button {
-    width: 50%;
+    width: 120px;
+    height: 44px;
     border: 1.5px solid #7858a6;
     border-radius: 5px;
     margin-top: 3%;
     color: aliceblue;
-    padding: 20px;
-    margin-bottom: 1.5%;
+    margin-bottom: 10.5%;
   }
 
   .close-icon-form {
