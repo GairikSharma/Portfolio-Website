@@ -12,7 +12,7 @@
   max-height: auto;
   background-color: rgb(23, 42, 69);
   color: white;
-  
+
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.5px);
@@ -114,11 +114,17 @@
   padding: 20px;
 }
 @media only screen and (max-width: 910px) {
+  .exp-wrapper {
+    flex-direction: column;
+  }
   .card-body-exp {
     width: 50%;
   }
 }
 @media only screen and (max-width: 600px) {
+  .exp-wrapper {
+    flex-direction: column;
+  }
   .card-body-exp {
     width: 100%;
   }
