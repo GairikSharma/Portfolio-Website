@@ -13,8 +13,8 @@
   margin-top: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .heading {
@@ -71,6 +71,24 @@
   top: 0;
   left: 0;
 }
+
+.resume-btn {
+  width: 120px;
+  height: 44px;
+  border: 1.5px solid rgba(66, 233, 239, 0.891);
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.resume-btn a {
+  color: aliceblue;
+  text-decoration: none;
+  background: transparent;
+}
+
+.resume-btn:hover {
+  background-color: rgba(58, 226, 255, 0.17);
+}
 @media only screen and (max-width: 990px) {
   .about-container {
     display: flex;
@@ -105,7 +123,7 @@
   }
 
   .heading {
-    color: rgba(66, 233, 239, 0.891);
+    color: rgb(233, 245, 255);
     font-weight: 8000;
     font-size: 2.5rem;
     word-spacing: 1.5px;
@@ -150,30 +168,6 @@
 @media only screen and (max-width: 400px) {
   .profile-card {
     width: 90%;
-    height: 60%;
-    border: transparent 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .profile-card {
-    width: 90%;
-    height: 80%;
-    border: transparent 1.5px solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .profile-card {
-    width: 100%;
     height: 60%;
     border: transparent 1.5px solid;
     display: flex;

@@ -1,5 +1,4 @@
 import React from "react";
-import { MdBusinessCenter } from "react-icons/md";
 import "./styles/experienceCard.css";
 import internship25dollar from "./assets/internship25dollar.jpeg";
 import gdscnsec from "./assets/gdscnsec.webp"

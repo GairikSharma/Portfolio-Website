@@ -4,19 +4,20 @@ import Typewriter from "typewriter-effect";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import coding from "./assets/coding.gif";
-import GairikSharma_cv from "./pdf/GairikSharma_cv.pdf"
 
 function About() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  const cv =
+    "https://drive.google.com/file/d/1NFdYOiZwXKMODa8DS10rKDRcHqb2c7o9/view?usp=drive_link";
+
   return (
     <>
       <div className="about-container" data-aos="fade-in">
         <div className="text-intro">
           <p className="heading">Hey , I am Gairik Sharma</p>
           <div className="headingtwo" style={{ height: "80px" }}>
-            
             <Typewriter
               options={{
                 strings: [
@@ -25,7 +26,6 @@ function About() {
                 ],
                 autoStart: true,
                 loop: true,
-                
               }}
             />
           </div>
@@ -53,14 +53,18 @@ function About() {
             </span>{" "}
             stack developer. I like to learn new technologies.
           </div>
+          <a>
+            <button className="resume-btn">
+              <a href={cv} target="blank">
+                Resume
+              </a>
+            </button>
+          </a>
         </div>
         <div className="profile">
           <img src={coding} className="profile-img" alt="" />
         </div>
-
-        
       </div>
-      <a href={GairikSharma_cv} target="blank">Resume</a>
     </>
   );
 }

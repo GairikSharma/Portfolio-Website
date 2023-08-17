@@ -3,27 +3,20 @@ import "./App.css";
 import About from "./about";
 import Education from "./education";
 import Projects from "./projects";
-import Skills from "./skills";
-import Certificate from "./certificate";
 import Achievement from "./achievement";
 import Contact from "./contact";
 import { FiMail } from "react-icons/fi";
-// import GairkSharma_cv from './pdf/GairikSharma_cv.pdf'
 
 import "./styles/nav.css";
 import { CgMenuRight } from "react-icons/cg";
 import { VscClose } from "react-icons/vsc";
-import { IoMdDownload } from "react-icons/io";
+import {SiLeetcode} from "react-icons/si"
+import {SiGeeksforgeeks} from "react-icons/si"
 
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
 import Footer from "./footer";
 import ExperienceCard from "./experience";
-import Swiper from "swiper";
-import SwiperElement from "./swiper";
-import Exp from "./experienceSection";
 import Progress from "./progressComponent";
 
 function App() {
@@ -41,14 +34,15 @@ function App() {
   const experienceref = useRef();
   const skillsref = useRef();
   const projectsref = useRef();
-  const certificateref = useRef();
+  // const certificateref = useRef();
   const achivementref = useRef();
   const contactref = useRef();
 
   const scrollComponent = (elem) => {
     elem.current.scrollIntoView({ behavior: "smooth" });
-    console.log(elem.current);
   };
+  const cv =
+    "https://drive.google.com/file/d/1NFdYOiZwXKMODa8DS10rKDRcHqb2c7o9/view?usp=drive_link";
 
   return (
     <div className="App">
@@ -99,14 +93,14 @@ function App() {
               >
                 Projects
               </li>
-              <li
+              {/* <li
                 onClick={() => {
                   setSidemenu(false);
                   scrollComponent(certificateref);
                 }}
               >
                 Certifications
-              </li>
+              </li> */}
               <li
                 onClick={() => {
                   setSidemenu(false);
@@ -124,16 +118,13 @@ function App() {
                 Contact
               </li>
             </ul>
-            <button>
-              Download CV
+            <button className="resume-btn">
+              
               <a
-                href="#"
-                style={{
-                  background: "transparent",
-                  color: "rgba(66, 233, 239, 0.891)",
-                }}
+                href={cv}
+                target="blank"
               >
-                <IoMdDownload className="download-icon" />
+                Resume
               </a>
             </button>
           </div>
@@ -178,13 +169,13 @@ function App() {
             >
               Projects
             </li>
-            <li
+            {/* <li
               onClick={() => {
                 scrollComponent(certificateref);
               }}
             >
               Certifications
-            </li>
+            </li> */}
             <li
               onClick={() => {
                 scrollComponent(achivementref);
@@ -211,17 +202,17 @@ function App() {
         <a href="gairiksharma2000@gmail.com">
           <FiMail className="social-media-icons" />
         </a>
-        <a href="https://www.linkedin.com/in/gairik-sharma-1633b4223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFDIXCFbTQhOJFcNumqDgDQ%3D%3D">
+        <a href="https://www.linkedin.com/in/gairik-sharma-1633b4223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFDIXCFbTQhOJFcNumqDgDQ%3D%3D" target="blank">
           <AiFillLinkedin className="social-media-icons" />
         </a>
-        <a href="https://github.com/GairikSharma/">
+        <a href="https://github.com/GairikSharma/" target="blank">
           <BsGithub className="social-media-icons" />
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100057292104618">
-          <BsFacebook className="social-media-icons" />
+        <a href="https://leetcode.com/gairik19/" target="blank">
+          <SiLeetcode className="social-media-icons" />
         </a>
-        <a href="https://instagram.com/gairik_sharma?igshid=YmMyMTA2M2Y=">
-          <BsInstagram className="social-media-icons" />
+        <a href="https://auth.geeksforgeeks.org/user/gairik19/" target="blank">
+          <SiGeeksforgeeks className="social-media-icons" />
         </a>
 
         <div></div>

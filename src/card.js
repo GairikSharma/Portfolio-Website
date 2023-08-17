@@ -29,12 +29,12 @@ function Card() {
               </div>
               <div className="buttons">
                 <button>
-                  <a href={props.live} target="_blank">
+                  <a style={{backgroundColor: "rgb(23, 42, 69)",}} href={props.live} target="_blank">
                     <BiLinkExternal className="card-btn-icons" />
                   </a>
                 </button>
                 <button>
-                  <a href={props.github} target="_blank">
+                  <a style={{backgroundColor: "rgb(23, 42, 69)",}} href={props.github} target="_blank">
                     <BsGithub className="card-btn-icons" />
                   </a>
                 </button>
