@@ -1,6 +1,7 @@
 import chat from "../assets/chat.png"
 import task from "../assets/task.png"
 import demo from "../assets/demo.png"
+import woc from "../assets/woc.png"
 
 export const projectData = [
   {
@@ -23,13 +24,13 @@ export const projectData = [
     github: "https://github.com/GairikSharma/TaskGenius",
     live: "https://taskgenius-task-manager.netlify.app/",
   },
-  // {
-  //   id: 3,
-  //   image: demo,
-  //   title: "NewsHunt",
-  //   tools: "React Js, News API",
-  //   description: "News api is used to get all the newses, and one more effect animate on scroll. Here you can see good quality css",
-  //   github: "link",
-  //   live: "link",
-  // },
+  {
+    id: 3,
+    image: woc,
+    title: "Winter Of Code",
+    tools: "React Js",
+    description: "Website of Google Winter Of Code updated website, contributed and developed some part of this website",
+    github: "https://github.com/winterofcode/winterofcode.github.io",
+    live: "winterofcode.com",
+  },
 ];

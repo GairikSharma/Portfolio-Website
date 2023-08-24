@@ -11,7 +11,7 @@ function Projects() {
     }, [])
   return (
     <>
-        <section className="all-projects" data-aos="fade-in">
+        <section className="all-projects">
             <Card />
         </section>
     </>

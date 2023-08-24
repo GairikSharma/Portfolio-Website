@@ -14,7 +14,7 @@ function Card() {
     <>
       {projectData.map((props) => {
         return (
-          <div className="card-body" data-aos={props.id%2==0 ? "fade-left" : "fade-right"}>
+          <div className="card-body" data-aos={props.id%2==0 ? "fade-in" : "fade-in"}>
             <div className="browser">
               <div className="circle-r"></div>
               <div className="circle-g"></div>

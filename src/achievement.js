@@ -14,7 +14,7 @@ function Achievement() {
     <>
       <div className="achievement-wrapper">
 
-        <div className="a-card-google" data-aos="fade-right">
+        <div className="a-card-google" data-aos="fade-in">
           <img src={googlecloud} className="card-img" alt="" />
           <div className="a-card-details-google">
             Participated in 30 days of Google Cloud
@@ -23,14 +23,14 @@ function Achievement() {
 
         <div className="a-card-others">
 
-          <div className="a-card-hacktoberfest" data-aos="fade-left">
+          <div className="a-card-hacktoberfest" data-aos="fade-in">
             <img src={hacktoberfest} className="card-img" alt="" />
             <div className="a-card-details-hacktoberfest">
               Participated in hacktoberfest 2022 and contributed on 5+ projects
             </div>
           </div>
 
-          <div className="a-card-hack4bengal" data-aos="fade-left">
+          <div className="a-card-hack4bengal" data-aos="fade-in">
             <img src={h4btwo} className="card-img" alt="" />
             <div className="a-card-details-hack4bengal">
               Participated in hack4bengal 2.0
