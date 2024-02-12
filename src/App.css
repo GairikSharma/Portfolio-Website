@@ -2,8 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   letter-spacing: 1px;
   background-color: rgb(10, 25, 47);
   cursor: pointer;
