@@ -18,6 +18,7 @@ import { BsGithub } from "react-icons/bs";
 import Footer from "./footer";
 import ExperienceCard from "./experience";
 import Progress from "./progressComponent";
+import Skills from "./skills";
 
 function App() {
   const [sidemenu, setSidemenu] = useState(false);
@@ -243,8 +244,7 @@ function App() {
         <h1>Skills</h1>
         <div></div>
       </div>
-      {/* <Skills /> */}
-      <Progress />
+      <Skills />
       <div className="skills" ref={projectsref}>
         <div></div>
         <h1>Projects</h1>
