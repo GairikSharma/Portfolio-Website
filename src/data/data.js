@@ -1,6 +1,5 @@
 import chat from "../assets/chat.png"
 import task from "../assets/task.png"
-import demo from "../assets/demo.png"
 import woc from "../assets/woc.png"
 
 export const projectData = [

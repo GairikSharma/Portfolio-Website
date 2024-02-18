@@ -10,14 +10,13 @@ import { FiMail } from "react-icons/fi";
 import "./styles/nav.css";
 import { CgMenuRight } from "react-icons/cg";
 import { VscClose } from "react-icons/vsc";
-import {SiLeetcode} from "react-icons/si"
-import {SiGeeksforgeeks} from "react-icons/si"
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import Footer from "./footer";
 import ExperienceCard from "./experience";
-import Progress from "./progressComponent";
 import Skills from "./skills";
 
 function App() {
@@ -120,11 +119,7 @@ function App() {
               </li>
             </ul>
             <button className="resume-btn">
-              
-              <a
-                href={cv}
-                target="blank"
-              >
+              <a href={cv} target="blank">
                 Resume
               </a>
             </button>
@@ -203,7 +198,10 @@ function App() {
         <a href="gairiksharma2000@gmail.com">
           <FiMail className="social-media-icons" />
         </a>
-        <a href="https://www.linkedin.com/in/gairik-sharma-1633b4223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFDIXCFbTQhOJFcNumqDgDQ%3D%3D" target="blank">
+        <a
+          href="https://www.linkedin.com/in/gairik-sharma-1633b4223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFDIXCFbTQhOJFcNumqDgDQ%3D%3D"
+          target="blank"
+        >
           <AiFillLinkedin className="social-media-icons" />
         </a>
         <a href="https://github.com/GairikSharma/" target="blank">

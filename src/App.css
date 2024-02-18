@@ -11,7 +11,7 @@
 }
 .exp-card-wrapper {
   width: 100%;
-  min-height: 680px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;

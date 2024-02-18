@@ -1,6 +1,6 @@
 .exp-wrapper {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   max-height: auto;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
 
 .card-body-exp {
   width: 25%;
-  min-height: 300px;
+  min-height: 250px;
   max-height: auto;
   background-color: rgb(23, 42, 69);
   color: white;
@@ -28,9 +28,10 @@
   padding: 5px;
 }
 .exp-logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 12px;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 .icon-workplace-exp {
   background-color: transparent;
@@ -50,16 +51,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
 }
 .workplace-header-exp {
   background-color: transparent;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .woprkplace-timeline-exp {
-  font-size: 16px;
+  font-size: 14.4px;
   background-color: transparent;
 }
 .icon-wrapper-exp {
@@ -105,11 +106,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 22px;
+  font-size: 14.4px;
   font-weight: 600;
 }
 .card-description-exp {
-  font-size: 18px;
   background-color: transparent;
 
   text-align: center;
@@ -117,11 +117,11 @@
 }
 @media only screen and (max-width: 910px) {
   .exp-wrapper {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
@@ -132,17 +132,14 @@
 
 @media only screen and (max-width: 600px) {
   .exp-wrapper {
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
   .card-body-exp {
     width: 100%;
-  }
-  .card-header-exp {
-    font-size: 20px;
   }
 }

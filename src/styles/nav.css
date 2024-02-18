@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: rgba(66, 233, 239, 0.891);
-  font-size: 18px;
+  color: rgba(255, 255, 255, 0.891);
+  font-size: 16px;
   z-index: 1000;
   margin-left: 0;
   margin-right: 0;
@@ -39,7 +39,7 @@
 }
 
 .menu-items li:hover {
-  color: white;
+  color: rgb(95, 220, 245);
 }
 
 .menu-icon {
