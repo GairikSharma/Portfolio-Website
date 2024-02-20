@@ -6,6 +6,19 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  transition: 1s;
+}
+.show-more-projects {
+  color: white;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.show-more-less-icon {
+  font-size: 22px;
 }
 .card-container {
   margin-top: 12px;

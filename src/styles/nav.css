@@ -77,7 +77,7 @@
   }
 
   .close-icon {
-    color: rgba(66, 233, 239, 0.891);
+    color: white;
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -100,7 +100,12 @@
     z-index: 100;
     font-size: 14.4px;
   }
-
+  .side-menu-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .side-menu-items ul li {
     display: flex;
     justify-content: center;
@@ -116,7 +121,6 @@
     color: rgba(66, 233, 239, 0.891);
     width: 100%;
     padding: 10px;
-    margin-top: 25px;
     border: rgba(66, 233, 239, 0.891) 1.5px solid;
     border-radius: 3px;
     display: flex;
@@ -129,7 +133,7 @@
 
 @media only screen and (max-width: 600px) {
   .nav {
-    font-size: 16px;
+    font-size: 14.4px;
   }
 
   .menu-icon {
@@ -137,16 +141,15 @@
   }
 
   .side-menu-items ul li {
-    font-size: 16px;
+    font-size: 14.4px;
   }
 
   .side-menu-items button {
     background-color: transparent;
     color: rgba(66, 233, 239, 0.891);
-    width: 100%;
+    width: 70%;
     padding: 7px;
-    margin-top: 25px;
-    border: rgba(66, 233, 239, 0.891) 1.5px solid;
+    border: rgba(66, 233, 239, 0.891) 0.5px solid;
     border-radius: 3px;
     display: flex;
     justify-content: center;

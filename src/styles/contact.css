@@ -97,11 +97,12 @@
 .modal-content form button {
   width: 150px;
   height: 64px;
-  border-radius: 5px;
+  border-radius: 7px;
+  border: none;
   margin-top: 3%;
   color: aliceblue;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1.5%;
 }
 
@@ -166,19 +167,18 @@
   }
 
   .modal-content form button {
-    width: 180px;
+    width: 100px;
     height: 44px;
-    border: 1.5px solid #7858a6;
-    border-radius: 5px;
-    margin-top: 3%;
+    border-radius: 3px;
     color: aliceblue;
     margin-bottom: 10.5%;
   }
 
   .close-icon-form {
+
     background: transparent;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     float: right;
     margin-bottom: 1rem;
     margin-right: 10px;

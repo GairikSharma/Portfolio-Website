@@ -10,7 +10,6 @@
 
 .text-intro {
   width: 60%;
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,12 +80,12 @@
   border-radius: 5px;
   margin-top: 15px;
   color: rgba(3, 25, 71, 0.883);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
 .resume-btn a {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   color: rgba(3, 25, 71, 0.883);
   background: transparent;
@@ -97,22 +96,14 @@
   .resume-btn {
     background-color: rgba(58, 226, 255, 0.17);
 
-    border: 1.5px solid rgba(66, 233, 239, 0.891);
+    border: 0.5px solid rgba(66, 233, 239, 0.891);
     box-shadow: none;
   }
   .resume-btn a {
-    color: rgba(66, 233, 239, 0.891);
+    color: white;
   }
 }
 
-.resume-btn:hover {
-  background-color: rgba(58, 226, 255, 0.17);
-
-  border: 1.5px solid rgba(66, 233, 239, 0.891);
-}
-.resume-btn:hover a {
-  color: rgba(66, 233, 239, 0.891);
-}
 @media only screen and (max-width: 990px) {
   .about-container {
     display: flex;
@@ -124,7 +115,6 @@
 
   .text-intro {
     width: 100%;
-    margin-top: 50px;
   }
 
   .profile {

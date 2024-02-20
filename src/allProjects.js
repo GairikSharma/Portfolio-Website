@@ -1,5 +1,5 @@
-import chatdesktop from "../src/assets/chatdesktop.jpeg"
-import taskgenius from "../src/assets/taskgenius .jpeg"
+import chatdesktop from "../src/assets/chatdesktop.jpeg";
+import taskgenius from "../src/assets/taskgenius .jpeg";
 
 export const data = [
   {
@@ -23,7 +23,7 @@ export const data = [
     live_link: "https://taskgenius-task-manager.netlify.app/",
   },
   {
-    id: 1,
+    id: 3,
     image: "",
     title: "WOC",
     tech_stack: "React Js",
