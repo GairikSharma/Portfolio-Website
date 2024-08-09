@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./App.css";
+import "./index.css"
 import About from "./about";
 import Education from "./education";
 import Projects from "./projects";
@@ -18,6 +19,7 @@ import { BsGithub } from "react-icons/bs";
 import Footer from "./footer";
 import ExperienceCard from "./experience";
 import Skills from "./skills";
+
 
 function App() {
   const [sidemenu, setSidemenu] = useState(false);

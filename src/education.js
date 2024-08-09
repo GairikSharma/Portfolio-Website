@@ -103,11 +103,11 @@ function Education() {
             className="vertical-timeline-element-subtitle"
             style={{ background: "transparent", fontWeight: "600" }}
           >
-            Netaji Subhash Engineering College
+            Netaji Subhash Engineering College (2024)
           </h4> 
           <p style={{ background: "transparent" }}>
-            Currently I'm persuing B.Tech in Electronics & Communication
-            Engineering from Netaji Subhash Engineering College.
+            Completed B.Tech in Electronics & Communication
+            Engineering from Netaji Subhash Engineering College with CGPA: 9.03.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

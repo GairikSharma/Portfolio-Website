@@ -16,13 +16,13 @@ function About() {
     <>
       <div className="about-container" data-aos="fade-in">
         <div className="text-intro">
-          <p className="heading">Hey , I am Gairik Sharma</p>
+          <p className="heading">Hey, I'm Gairik</p>
           <div className="headingtwo" style={{ height: "80px" }}>
             <Typewriter
               options={{
                 strings: [
-                  "I am a Electronics Engineer",
-                  "I am a MERN stack Developer",
+                  "Electronics & Communication Engineer",
+                  "Full stack Developer",
                 ],
                 autoStart: true,
                 loop: true,

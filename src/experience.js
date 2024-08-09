@@ -33,7 +33,7 @@ function ExperienceCard() {
             </div>
             <div className="workplace-exp">
               <div className="workplace-header-exp">GDSC (NSEC)</div>
-              <div className="woprkplace-timeline-exp">Oct 2022 - Present</div>
+              <div className="woprkplace-timeline-exp">Oct 2022 - Aug 2023</div>
             </div>
           </div>
           <div className="card-header-exp">Web Team member</div>
@@ -48,7 +48,7 @@ function ExperienceCard() {
               <div className="workplace-header-exp">
                 CYBERNIX (NSEC)
               </div>
-              <div className="woprkplace-timeline-exp">Aug 2023 - Present</div>
+              <div className="woprkplace-timeline-exp">Aug 2023 - Aug 2024</div>
             </div>
           </div>
           <div className="card-header-exp">Web Team member</div>
